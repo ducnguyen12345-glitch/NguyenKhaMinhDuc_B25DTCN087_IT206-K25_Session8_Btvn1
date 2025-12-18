@@ -1,0 +1,19 @@
+Prompt for Cursor AI (Vietnamese):
+
+"Tạo menu cho Student Manager với các chức năng sau (menu lặp cho đến khi chọn thoát):
+1. Nhập sinh viên
+2. In danh sách
+3. Ghi file
+4. Đọc file
+5. Tìm kiếm
+6. Sắp xếp
+7. Thêm sinh viên
+8. Xóa sinh viên
+0. Thoát
+
+Yêu cầu thêm cho AI:
+- Bổ sung comment chi tiết cho từng chức năng và mỗi bước xử lý (ví dụ: nhập tên file, kiểm tra lỗi, parse, update mảng,...).
+- Sinh 10 sinh viên giả lập để test (tên và GPA khác nhau).
+- Viết mô tả luồng chạy chương trình ngắn (flow): khỏi tạo dữ liệu, hiển thị menu, xử lý lựa chọn, lặp, lưu/đọc file, thoát.
+
+Yêu cầu code tương thích C99, tránh buffer overflow, sử dụng `strncpy` khi copy tên, và xử lý input bằng `fgets` để an toàn." 
