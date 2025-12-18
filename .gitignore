@@ -1,0 +1,17 @@
+# Compiled binaries
+*.exe
+*.out
+*.o
+*.obj
+
+# Visual Studio / editor
+.vs/
+.vscode/
+*.user
+*.userosscache
+
+# macOS
+.DS_Store
+
+# swap
+*~
