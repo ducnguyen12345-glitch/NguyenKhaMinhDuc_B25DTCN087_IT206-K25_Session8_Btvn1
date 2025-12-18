@@ -1,0 +1,12 @@
+Cursor AI prompt (Vietnamese):
+
+"Project: a small C project stores students using struct Student {int id; char name[50]; int age; float gpa;}.
+Task: Implement a robust function `int saveToFile(const char *filename, struct Student *students, int count)` that:
+- Opens/creates the text file named by `filename` for writing.
+- Writes a header line: `ID Name Age GPA` followed by one student per line formatted as `ID Name Age GPA` (space-separated), with GPA printed with one decimal place.
+- Returns 0 on success, non-zero on failure.
+- Uses portable C (C99 compatible), handles file errors, and closes the file properly.
+
+Also modify or provide a short `main()` example that calls `saveToFile("students.txt", students, n)` and prints a confirmation message. Keep code style consistent with existing project." 
+
+Notes: ensure the function creates the file in the same folder as the program when run, and the output file is human-readable (plain text).
