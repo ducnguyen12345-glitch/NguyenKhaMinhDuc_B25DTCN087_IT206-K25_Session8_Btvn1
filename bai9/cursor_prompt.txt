@@ -1,0 +1,19 @@
+Prompt for Cursor AI (Vietnamese):
+
+"Yêu cầu: Thêm hai hàm cho Student Manager:
+
+1) `int addStudent(struct Student *students, int *count, int max, struct Student s)`
+   - Docstring: mô tả mục đích (thêm sinh viên `s` vào `students` nếu còn chỗ và ID không trùng), tham số (mảng, con trỏ số phần tử, sức chứa, học sinh mới), và giá trị trả về (0 = success, 1 = duplicate ID, 2 = full).
+   - Behavior: kiểm tra trùng ID trước khi thêm; nếu trùng, trả về 1; nếu đầy, trả về 2; nếu thêm thành công, tăng `*count` và trả về 0.
+
+2) `int deleteStudentById(struct Student *students, int *count, int id)`
+   - Docstring: mô tả mục đích (xóa sinh viên có `id`), tham số, và giá trị trả về (0 = removed, -1 = not found).
+   - Behavior: tìm chỉ số của ID, dịch trái các phần tử sau đó để lấp khoảng trống, giảm `*count`.
+
+3) Thêm test cases trong `main()`:
+   - Thêm thành công một sinh viên mới (ví dụ ID 4 Dũng 22 6.5).
+   - Thêm trùng ID (thử thêm lại ID 4) — hàm phải trả về duplicate.
+   - Xóa ID tồn tại (xóa ID 2) — sau đó kiểm tra list.
+   - Xóa ID không tồn tại (ví dụ 999) — hàm trả về not found.
+
+Yêu cầu code tương thích C99, an toàn (sử dụng `strncpy` khi cần), và thêm docstring/comment cho mỗi hàm theo mô tả trên."
