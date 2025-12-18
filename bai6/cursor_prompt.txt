@@ -1,0 +1,13 @@
+Prompt for Cursor AI (Vietnamese):
+
+"Hãy bổ sung vào project Student Manager một hàm `double averageGPA(const struct Student *students, int count)` để tính điểm trung bình GPA của lớp.
+Yêu cầu:
+- Nếu `count` bằng 0, hàm trả về 0.0.
+- Sử dụng kiểu `double` cho độ chính xác và trả về giá trị trung bình.
+- Viết docstring/ngắn mô tả cho hàm (mục đích, tham số, giá trị trả về).
+
+Thêm đoạn code test tự động tạo 10 sinh viên giả lập với GPA khác nhau (gợi ý: 7.5, 8.0, 8.5, 9.0, 8.0, 8.25, 8.75, 9.0, 7.5, 8.0) và in ra "GPA trung bình của lớp là: X.XX" (kết quả mong muốn 8.25).
+
+Tạo test case cho danh sách rỗng (count = 0) và in ra thông báo phù hợp nếu không thể tính.
+
+Yêu cầu code tương thích C99, an toàn, và giữ style giống project hiện có." 
