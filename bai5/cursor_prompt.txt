@@ -1,0 +1,18 @@
+Prompt for Cursor AI (Vietnamese):
+
+"Hãy bổ sung vào Student Manager hàm tìm kiếm sinh viên theo ID.
+Yêu cầu:
+- Viết hàm `int readIdFromUser(int *outId)` để nhập ID cần tìm từ bàn phím, có prompt 'Nhập ID cần tìm: '. Hàm trả về 1 nếu đọc thành công, 0 nếu lỗi/không hợp lệ.
+- Viết hàm `int findStudentById(struct Student *students, int count, int id)` trả về chỉ số (index) nếu tìm thấy, hoặc -1 nếu không tìm thấy.
+- Thêm docstring (mô tả ngắn) cho cả hai hàm, mô tả tham số và giá trị trả về.
+- Trong `main()`, load danh sách sinh viên từ `students.txt`, gọi `readIdFromUser()`, dùng `findStudentById()` để tìm và in kết quả theo định dạng:
+  Kết quả tìm kiếm:
+  ID: 2, Name: Bình, Age: 21, GPA: 7.5
+  Nếu không tìm thấy in `Không tìm thấy`.
+
+Sinh test case (tóm tắt) để kiểm tra hàm:
+1) ID tồn tại (ví dụ: 2) -> hiển thị thông tin sinh viên.
+2) ID không tồn tại (ví dụ: 999) -> in 'Không tìm thấy'.
+3) ID âm (ví dụ: -1) -> in 'Không tìm thấy' (hoặc xử lý là ID không hợp lệ).
+
+Yêu cầu code tương thích C99, an toàn (tránh overflow), và có ví dụ ngắn minh họa cách gọi hàm trong `main`."
