@@ -1,0 +1,20 @@
+Prompt for Cursor AI (Vietnamese):
+
+"Project: Student Manager supports multiple classes, each stored in its own text file (classA.txt, classB.txt, classC.txt). Please modify/add code as follows:
+
+1) Implement a program that prompts the user for a filename (e.g., 'classA.txt'), opens that file and reads students. Each file uses the format:
+   ID Name Age GPA
+   1 An 20 8.0
+   2 Bình 21 7.5
+
+2) Provide detailed comments for each processing step: reading the filename, trimming newline, opening file, skipping optional header, parsing lines, populating Student structs, handling errors, and printing the list with a header indicating the class letter (A/B/C) when possible.
+
+3) Add sample data files for three classes: classA.txt, classB.txt, classC.txt. Provide simple fake data for testing.
+
+4) Ensure code is C99-compatible and robust (avoid buffer overflow, check return values). Keep function `loadFromFile(const char *filename, struct Student *students, int max)` and include comments/docstrings.
+
+Deliverables:
+- Updated `main.c` that prompts for filename and prints 'Danh sách sinh viên lớp X:' where X is extracted from filename if possible.
+- The three sample class files.
+- Inline comments describing each major block.
+"
