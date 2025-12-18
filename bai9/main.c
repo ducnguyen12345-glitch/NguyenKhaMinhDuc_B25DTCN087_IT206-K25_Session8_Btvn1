@@ -11,13 +11,16 @@ struct Student {
 
 /*
  * addStudent
- * Add a new student to the array if there's space and the ID is not duplicate.
- * Parameters:
- *   students - array of Student with capacity 'max'
- *   count    - pointer to current number of students (will be incremented on success)
- *   max      - capacity of the students array
- *   s        - Student to add
- * Returns: 0 on success, 1 if duplicate ID, 2 if array full
+ * Thêm một sinh viên mới vào mảng nếu còn chỗ và ID không trùng.
+ * Tham số:
+ *   students - mảng `Student` có sức chứa `max`.
+ *   count    - con trỏ tới số lượng sinh viên hiện tại (sẽ được tăng khi thêm thành công).
+ *   max      - sức chứa tối đa của mảng `students`.
+ *   s        - sinh viên cần thêm.
+ * Trả về:
+ *   0 - thêm thành công
+ *   1 - ID trùng
+ *   2 - mảng đầy
  */
 int addStudent(struct Student *students, int *count, int max, struct Student s) {
     if (*count >= max) return 2; // full
@@ -31,12 +34,14 @@ int addStudent(struct Student *students, int *count, int max, struct Student s) 
 
 /*
  * deleteStudentById
- * Remove the student with the given ID from the array (in-place).
- * Parameters:
- *   students - array of Student
- *   count    - pointer to current number of students (will be decremented on success)
- *   id       - ID to remove
- * Returns: 0 on success (found and removed), -1 if not found
+ * Xóa sinh viên có ID cho trước khỏi mảng (thực hiện tại chỗ).
+ * Tham số:
+ *   students - mảng `Student`.
+ *   count    - con trỏ tới số lượng sinh viên hiện tại (sẽ giảm khi xóa thành công).
+ *   id       - ID cần xóa.
+ * Trả về:
+ *   0  - xóa thành công (tìm thấy và đã loại bỏ)
+ *   -1 - không tìm thấy ID
  */
 int deleteStudentById(struct Student *students, int *count, int id) {
     for (int i = 0; i < *count; i++) {
