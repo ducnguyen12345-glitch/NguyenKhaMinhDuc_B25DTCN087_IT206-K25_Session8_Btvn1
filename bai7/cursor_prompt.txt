@@ -1,0 +1,13 @@
+Prompt for Cursor AI (Vietnamese):
+
+"Hãy bổ sung vào Student Manager hàm sắp xếp sinh viên theo GPA giảm dần.
+Yêu cầu:
+- Viết hàm `void sortByGpaDesc(struct Student *students, int count)` sử dụng thuật toán Selection Sort hoặc Bubble Sort (nêu rõ lựa chọn) để sắp xếp tại chỗ theo GPA giảm dần.
+- Thêm docstring/ngắn mô tả giải thích logic thuật toán bạn chọn (ví dụ Selection Sort: chọn phần tử lớn nhất vào vị trí hiện tại, O(n^2)).
+- Viết hàm `void printStudents(const struct Student *students, int count)` để in danh sách theo định dạng `ID Name Age GPA`.
+- Sinh test case để kiểm thử:
+  1) GPA bằng nhau (tất cả bằng 8.0) — kiểm tra không thay đổi thứ tự tương đối (stable not required but show behavior).
+  2) GPA tăng dần sẵn (7.5, 8.0, 9.0) — sau sắp xếp phải trở thành 9.0, 8.0, 7.5.
+  3) GPA ngẫu nhiên (ví dụ 8.0, 7.5, 9.0).
+
+Yêu cầu code tương thích C99, rõ ràng, có ví dụ chạy trong `main()` và in ra kết quả cho mỗi test case." 
